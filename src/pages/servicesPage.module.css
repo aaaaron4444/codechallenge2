@@ -1,0 +1,11 @@
+
+.servicesPage {
+    text-align: center;
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem; /* Adds space between the image and the services section */
+  }
+  

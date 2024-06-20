@@ -1,0 +1,90 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    background-image: url('/banner/banner1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .heroContent {
+    text-align: center;
+    z-index: 1;
+    padding: 2rem;
+  }
+  
+  .textOverlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
+  .heroTitle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .hero {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.5rem; /* Adjust title font size for smaller screens */
+    }
+    
+    .subtitle {
+      font-size: 1.25rem; /* Adjust subtitle font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 2rem; /* Further adjust title font size for smaller screens */
+    }
+    
+    .subtitle {
+      font-size: 1rem; /* Further adjust subtitle font size for smaller screens */
+    }
+  }
